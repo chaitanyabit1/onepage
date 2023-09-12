@@ -1,0 +1,132 @@
+.home {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+}
+
+.homeContainer {
+  position: relative;
+}
+
+.coverImage {
+  position: absolute;
+  top: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100vh;
+}
+.coverImage::after {
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0)
+  );
+  position: absolute;
+  z-index: 88;
+}
+
+.box {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.coverImage img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.content {
+  padding: 100px;
+}
+.upcome .content {
+  padding: 0;
+}
+
+.home .content h1 {
+  margin-top: 80px;
+  font-size: 90px;
+  text-transform: uppercase;
+  font-weight: 800;
+  background-image: url("../../../public/images/texure.jpg");
+  background-repeat: repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-font-smoothing: antialiased;
+}
+
+.rating {
+  margin: 20px 0;
+}
+
+.rating i {
+  color: red;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.Playbutton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Playbutton img {
+  width: 90px;
+  height: 90px;
+}
+
+.Playbutton .img {
+  position: relative;
+  margin-right: 15px;
+}
+
+.changeImg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.Playbutton:hover .changeImg {
+  opacity: 1;
+}
+
+.Playbutton button {
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 500;
+  letter-spacing: 2px;
+  transition: 0.5s;
+}
+.Playbutton button:hover {
+  color: red;
+}
+
+.cast h4 {
+  margin: 15px 0;
+}
+.cast h4 span {
+  color: red;
+  margin-right: 15px;
+}
